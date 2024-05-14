@@ -23,6 +23,7 @@ type Podman::Unit::Container = Struct[
   Optional['HealthStartupInterval'] => Variant[Enum['disable'],Integer[0]],
   Optional['HealthStartupTimeout'] => String[1],
   Optional['HealthTimeout'] => String[1],
+  Optional['HostName'] => Stdlib::Fqdn,
   Optional['Image'] => String[1],
   Optional['IP'] => Stdlib::IP::Address::V4,
   Optional['IP6'] => Stdlib::IP::Address::V6,
